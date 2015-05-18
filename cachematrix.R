@@ -34,7 +34,9 @@
 #				  [5] "x"             "X.inverse"    
 #				  > 
 #
-
+#            The objects in the environment in which X was created are shown.
+#            These are the objects that are modified with the "<<-" assignment
+#            operator in the functions contained by X.
 
 
 makeCacheMatrix = function( x = matrix()) {
