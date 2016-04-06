@@ -54,9 +54,8 @@ makeCacheMatrix = function( x = matrix()) {
 			
 	}
 		# Creates a function that allows user to change the value of the base
-		#   matrix
-		#   passed to makeCacheMatrix() and resets the value of X.inverse to
-		#   NULL.
+		#   matrix passed to makeCacheMatrix() and resets the value of X.inverse
+		#   to NULL.
 	
 	get.X = function() x
 		# Creates a function that returns and displays the value of x, the
@@ -102,9 +101,11 @@ cacheSolve = function( x, ...) {
 		
 	if (!is.null( X.inverse)) {	
 		# Condition checks to see if the value of X.inverse is not NULL.
+		
 		message( "Getting cached data ...")
 			# Informs user that inverse is not being calculated; a cached value
 			#   will be returned.
+			
 		return( X.inverse)
 			# Cached value of matrix inverse, i.e., X.inverse, is returned.
 	}
