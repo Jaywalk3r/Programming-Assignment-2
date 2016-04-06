@@ -48,8 +48,10 @@ makeCacheMatrix = function( x = matrix()) {
 		x <<- y
 			# Changes the value of x, the argument of makeCachMatrix(), to y,
 			#   the argument of set().
+			
 		X.inverse <<- NULL
 			# Resets the value of X.inverse, if it has one, to NULL
+			
 	}
 		# Creates a function that allows user to change the value of the base
 		#   matrix
@@ -93,7 +95,7 @@ cacheSolve = function( x, ...) {
 		# Return a matrix that is the inverse of 'x'
 	
 	X.inverse = x$get.X.inverse()
-		# Calls get.X.inverse() of x, which is presumable a list returned by
+		# Calls get.X.inverse() of x, which is presumably a list returned by
 		#   makeCacheMatrix(), and assigns the returned value to X.inverse.
 		#   Note that this variable "X.inverse" is different from the variable
 		#   "X.inverse" created in the makeCacheMatrix() function call.
